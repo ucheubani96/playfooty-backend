@@ -5,25 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a30e7d50-f0bc-4f26-a877-e89c2ffca00f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/models/UserDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend-api/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend-core/src/main/java/com/playfooty/backendCore/config/AuditableConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend-core/src/main/java/com/playfooty/backendCore/config/DatabaseConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend-core/src/main/java/com/playfooty/backendCore/models/Auditable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend-core/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/BackendApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/BackendApiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend-api/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend-core/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/booking/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/booking/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/match-management/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/match-management/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notifications/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team-management/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/team-management/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
