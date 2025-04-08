@@ -1,0 +1,49 @@
+# === Java & Maven ===
+/target/
+*/target/
+
+# Maven build files
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+release.properties
+
+# === Logs ===
+*.log
+logs/
+*.out
+
+# === IntelliJ ===
+.idea/
+*.iml
+*.iws
+out/
+
+# === Eclipse ===
+*.classpath
+*.project
+*.settings/
+
+# === VS Code ===
+.vscode/
+
+# === OS-specific ===
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# === Environment & credentials ===
+.env
+*.env
+*.key
+*.pem
+
+# === Test and coverage ===
+test-output/
+jacoco.exec
+*.exec
+coverage-reports/
+
+# === Others ===
+*.swp
