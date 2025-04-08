@@ -3,10 +3,11 @@
 */target/
 
 # Maven build files
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-release.properties
+*.mvn
+*/pom.xml.tag
+*/pom.xml.releaseBackup
+*/pom.xml.versionsBackup
+*/release.properties
 
 # === Logs ===
 *.log
@@ -58,7 +59,7 @@ target/
 .sts4-cache
 
 ### IntelliJ IDEA ###
-*/idea
+.idea
 *.iws
 *.iml
 *.ipr
