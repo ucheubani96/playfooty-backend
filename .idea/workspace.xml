@@ -5,27 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a30e7d50-f0bc-4f26-a877-e89c2ffca00f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/models/UserDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend-api/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend-core/src/main/java/com/playfooty/backendCore/config/AuditableConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend-core/src/main/java/com/playfooty/backendCore/config/DatabaseConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend-core/src/main/java/com/playfooty/backendCore/models/Auditable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend-core/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-api/src/main/resources/db/migration/V1__init_db.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend-api/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend-api/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/BackendApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/BackendApiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend-api/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend-core/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/booking/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/booking/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/match-management/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/match-management/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notifications/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team-management/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/team-management/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend-api/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +16,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -51,12 +36,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "Merging main",
-    "last_opened_file_path": "/Users/mac/IdeaProjects/PlayFootyBackend"
+    "git-widget-placeholder": "feature/setup-user-models-and-migration",
+    "last_opened_file_path": "/Users/mac/IdeaProjects/PlayFootyBackend/backend-api/src/main/resources/db/migration"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend-api/src/main/resources/db/migration" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/backend-core/src/main/java/com/playfooty/backendCore" />
     </key>
