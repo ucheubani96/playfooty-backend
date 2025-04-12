@@ -47,3 +47,16 @@ CREATE TABLE IF NOT EXISTS user_details
     last_modified_by  VARCHAR(50) NOT NULL
 );
 
+CREATE TABLE IF NOT EXISTS user_profiles
+(
+    id          UUID NOT NULL PRIMARY KEY,
+    username    VARCHAR(50) NOT NULL UNIQUE,
+    email       VARCHAR(50) NOT NULL UNIQUE,
+    image       VARCHAR(1000),
+    is_active   BOOLEAN NOT NULL DEFAULT FALSE,
+    created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    created_by  VARCHAR(50) NOT NULL,
+    last_modified_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    last_modified_by  VARCHAR(50) NOT NULL
+);
+
