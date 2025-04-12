@@ -29,6 +29,13 @@
 		<java.version>17</java.version>
 		<spring-modulith.version>1.3.4</spring-modulith.version>
 	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>com.playfooty</groupId>
+			<artifactId>backend-core</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
