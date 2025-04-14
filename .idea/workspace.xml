@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a30e7d50-f0bc-4f26-a877-e89c2ffca00f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend-core/src/main/java/com/playfooty/backendCore/config/RedisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monitoring/prometheus.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monitoring/promtail-config.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/repositories/UserDetailsRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/repositories/UserDetailsRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend-api/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/src/main/java/com/playfooty/userManagement/repositories/UserProfileRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/src/main/java/com/playfooty/userManagement/repositories/UserProfileRepo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +48,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "feature/setup-redis-connection",
+    "git-widget-placeholder": "feature/setup-logging-monitoring",
     "last_opened_file_path": "/Users/mac/IdeaProjects/PlayFootyBackend/backend-api/src/main/resources/db/migration"
   }
 }]]></component>
