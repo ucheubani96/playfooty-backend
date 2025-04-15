@@ -5,24 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a30e7d50-f0bc-4f26-a877-e89c2ffca00f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/dto/AddUserRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/dto/LoginRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/service/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend-core/src/main/java/com/playfooty/backendCore/dto/ErrorResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend-core/src/main/java/com/playfooty/backendCore/dto/PaginationRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend-core/src/main/java/com/playfooty/backendCore/dto/SuccessResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend-core/src/main/java/com/playfooty/backendCore/exception/BadRequestException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend-core/src/main/java/com/playfooty/backendCore/exception/ConflictException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend-core/src/main/java/com/playfooty/backendCore/exception/ForbiddenException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend-core/src/main/java/com/playfooty/backendCore/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend-core/src/main/java/com/playfooty/backendCore/exception/NotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend-core/src/main/java/com/playfooty/backendCore/exception/UnauthorizedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend-core/src/main/java/com/playfooty/backendCore/service/BaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-management/src/main/java/com/playfooty/userManagement/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/models/UserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/model/UserDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/repositories/UserDetailsRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/repository/UserDetailsRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend-core/src/main/java/com/playfooty/backendCore/models/Auditable.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend-core/src/main/java/com/playfooty/backendCore/model/Auditable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/src/main/java/com/playfooty/userManagement/models/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/src/main/java/com/playfooty/userManagement/models/UserProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/dto/AddUserRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend-core/src/main/java/com/playfooty/backendCore/dto/AddUserRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/model/UserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/model/UserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/repository/UserDetailsRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/repository/UserDetailsRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/src/main/java/com/playfooty/userManagement/models/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/src/main/java/com/playfooty/userManagement/model/UserProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/src/main/java/com/playfooty/userManagement/repositories/UserProfileRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/src/main/java/com/playfooty/userManagement/repository/UserProfileRepo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

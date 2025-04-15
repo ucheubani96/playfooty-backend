@@ -1,4 +1,4 @@
-package com.playfooty.backend_api.dto;
+package com.playfooty.backendCore.dto;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -27,6 +27,6 @@ public class AddUserRequestDto {
     private String password;
 
     @NotBlank
-    @Size(min=6, max=32)
+    @Size(min=6, max=100)
     private String image;
 }

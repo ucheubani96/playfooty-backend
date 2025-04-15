@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import java.util.UUID;
 import com.playfooty.backendCore.model.Auditable;
-import com.playfooty.userManagement.models.UserProfile;
+import com.playfooty.userManagement.model.UserProfile;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

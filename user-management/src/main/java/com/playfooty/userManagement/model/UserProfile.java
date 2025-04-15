@@ -1,4 +1,4 @@
-package com.playfooty.userManagement.models;
+package com.playfooty.userManagement.model;
 
 import jakarta.persistence.*;
 
