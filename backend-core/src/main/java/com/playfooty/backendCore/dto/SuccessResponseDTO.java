@@ -16,7 +16,9 @@ public class SuccessResponseDTO {
 
     private String message;
 
-    private Object data;
+    @Builder.Default
+    private Object data = null;
 
-    private Instant timestamp;
+    @Builder.Default
+    private Instant timestamp = Instant.now();
 }
