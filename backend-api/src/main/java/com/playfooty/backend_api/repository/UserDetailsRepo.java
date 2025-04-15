@@ -1,6 +1,6 @@
-package com.playfooty.backend_api.repositories;
+package com.playfooty.backend_api.repository;
 
-import com.playfooty.backend_api.models.UserDetails;
+import com.playfooty.backend_api.model.UserDetails;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

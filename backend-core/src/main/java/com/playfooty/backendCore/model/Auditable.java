@@ -1,4 +1,4 @@
-package com.playfooty.backendCore.models;
+package com.playfooty.backendCore.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.EntityListeners;

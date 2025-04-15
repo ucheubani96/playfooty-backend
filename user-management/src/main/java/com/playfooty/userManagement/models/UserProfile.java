@@ -1,11 +1,10 @@
 package com.playfooty.userManagement.models;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import java.util.UUID;
 
-import com.playfooty.backendCore.models.Auditable;
+import com.playfooty.backendCore.model.Auditable;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -30,7 +29,4 @@ public class UserProfile extends Auditable {
 
     @Column(name = "image", nullable = false, unique = true, length = 1000)
     private String image;
-
-    @Column(name = "is_active")
-    private Boolean isActive;
 }

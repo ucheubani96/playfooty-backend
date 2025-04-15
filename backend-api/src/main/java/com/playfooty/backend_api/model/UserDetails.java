@@ -1,9 +1,9 @@
-package com.playfooty.backend_api.models;
+package com.playfooty.backend_api.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import java.util.UUID;
-import com.playfooty.backendCore.models.Auditable;
+import com.playfooty.backendCore.model.Auditable;
 import com.playfooty.userManagement.models.UserProfile;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -33,7 +33,7 @@ public class UserDetails extends Auditable {
     private String password;
 
     @Column(name = "is_active")
-    private Boolean isActive;
+    private Boolean isActive = false;
 
     @OneToOne
     @MapsId
