@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a30e7d50-f0bc-4f26-a877-e89c2ffca00f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/user-management/src/main/java/com/playfooty/userManagement/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/security/JWTRequestFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/security/JWTService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/security/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/service/PasswordHasher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/service/UserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-core/src/main/java/com/playfooty/backendCore/exception/ExpiredJWTException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-core/src/main/java/com/playfooty/backendCore/exception/InvalidJWTException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/dto/AddUserRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend-core/src/main/java/com/playfooty/backendCore/dto/AddUserRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/model/UserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/model/UserDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/repository/UserDetailsRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/repository/UserDetailsRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend-api/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend-api/src/main/java/com/playfooty/backend_api/service/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/src/main/java/com/playfooty/userManagement/models/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/src/main/java/com/playfooty/userManagement/model/UserProfile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/src/main/java/com/playfooty/userManagement/repositories/UserProfileRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/src/main/java/com/playfooty/userManagement/repository/UserProfileRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,8 +68,9 @@
       <recent name="$PROJECT_DIR$/backend-core/src/main/java/com/playfooty/backendCore" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.playfooty.backendCore.dto" />
+      <recent name="com.playfooty.backend_api.security" />
       <recent name="com.playfooty.backendCore.exception" />
+      <recent name="com.playfooty.backendCore.dto" />
     </key>
   </component>
   <component name="RunManager">

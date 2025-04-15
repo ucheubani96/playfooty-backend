@@ -16,38 +16,24 @@ public class AuthService extends BaseService {
 
     private final UserService userService;
 
-    private final UserDetailsRepo userDetailsRepo;
+    private final UserDetailsService userDetailsService;
+
+    private final PasswordHasher passwordHasher;
 
     public void register (AddUserRequestDto request) throws RuntimeException {
 
-        if (verifyUsernameUniqueness(request.getUsername())) throw new BadRequestException("Username already exist");
+        if (userDetailsService.verifyUsernameUniqueness(request.getUsername())) throw new BadRequestException("Username already exist");
 
-        if (verifyEmailUniqueness(request.getEmail())) throw new BadRequestException("Email already exist");
+        if (userDetailsService.verifyEmailUniqueness(request.getEmail())) throw new BadRequestException("Email already exist");
 
-        request.setPassword(hashService.generate(request.getPassword()));
+        request.setPassword(passwordHasher.hashPassword(request.getPassword()));
 
-        UserDetails userDetails = addUserDetails(request);
+        UserDetails userDetails = userDetailsService.addUserDetails(request);
 
         UserProfile user = userService.addUser(request, userDetails.getId());
 
 //        Send welcome email
     }
 
-    private UserDetails addUserDetails (AddUserRequestDto addUserRequest) throws RuntimeException {
-        UserDetails userDetails = UserDetails.builder()
-                .email(addUserRequest.getEmail())
-                .password(addUserRequest.getPassword())
-                .username(addUserRequest.getUsername())
-                .build();
 
-        return userDetailsRepo.saveAndFlush(userDetails);
-    }
-
-    public Boolean verifyUsernameUniqueness (String username) {
-        return userDetailsRepo.existsByUsername(username);
-    }
-
-    public Boolean verifyEmailUniqueness (String email) {
-        return userDetailsRepo.existsByEmail(email);
-    }
 }
