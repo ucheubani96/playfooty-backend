@@ -8,9 +8,6 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 
-import java.util.HashMap;
-import java.util.Map;
-
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
@@ -61,6 +58,20 @@ public class GlobalExceptionHandler {
                 HttpStatus.UNAUTHORIZED
         );
     }
+
+//    @ExceptionHandler(JWTVerificationException.class)
+//    public ResponseEntity<ErrorResponseDTO> jwtException (UnauthorizedException e) {
+//        return new ResponseEntity<>(
+//                ErrorResponseDTO.builder()
+//                        .status(HttpStatus.UNAUTHORIZED.value())
+//                        .error("Unauthorized")
+//                        .message(e.getMessage())
+//                        .build(),
+//                HttpStatus.UNAUTHORIZED
+//        );
+//    }
+
+
 
     @ExceptionHandler(ForbiddenException.class)
     public ResponseEntity<ErrorResponseDTO> handleForbiddenException (ForbiddenException e, WebRequest request) {

@@ -33,6 +33,7 @@ public class UserDetails extends Auditable {
     private String password;
 
     @Column(name = "is_active")
+    @Builder.Default
     private Boolean isActive = false;
 
     @OneToOne

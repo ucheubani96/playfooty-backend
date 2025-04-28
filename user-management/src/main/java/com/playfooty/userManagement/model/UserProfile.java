@@ -1,19 +1,18 @@
 package com.playfooty.userManagement.model;
 
+import com.playfooty.backendCore.model.Auditable;
 import jakarta.persistence.*;
+import lombok.Setter;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
 
 import java.util.UUID;
 
-import com.playfooty.backendCore.model.Auditable;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
 @Getter
+@Setter
 @Entity
 @Table(name = "user_profiles")
 public class UserProfile extends Auditable {

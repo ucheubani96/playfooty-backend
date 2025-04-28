@@ -17,14 +17,16 @@ public class UserService extends BaseService {
 
     public UserProfile addUser (AddUserRequestDto request, UUID id) throws RuntimeException {
 
-        UserProfile user = UserProfile.builder()
-                .id(id)
-                .email(request.getEmail())
-                .username(request.getUsername())
-                .image(request.getImage())
-                .build();
+        UserProfile userProfile = new UserProfile();
 
-        return userProfileRepo.saveAndFlush(user);
+        String hes = userProfile.getUsername();
+
+//        userProfile.setId(id);
+//        userProfile.setEmail(request.getEmail());
+//        userProfile.setUsername(request.getUsername());
+//        userProfile.setImage(request.getImage());
+
+        return userProfileRepo.saveAndFlush(userProfile);
     }
 
     public Boolean verifyUsernameUniqueness (String username) {
