@@ -7,10 +7,10 @@ import lombok.NoArgsConstructor;
 
 import java.time.Instant;
 
-@NoArgsConstructor(force = true)
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
-@Data
+
 public class ErrorResponseDTO {
     private Integer status;
 
@@ -18,5 +18,5 @@ public class ErrorResponseDTO {
 
     private String message;
 
-    private Instant timestamp;
+//    private Instant timestamp;
 }

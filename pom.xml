@@ -34,12 +34,12 @@
 
     <modules>
         <module>backend-core</module>
+        <module>user-management</module>
         <module>backend-api</module>
         <module>team-management</module>
         <module>booking</module>
         <module>match-management</module>
         <module>notifications</module>
-        <module>user-management</module>
     </modules>
 
     <dependencies>
@@ -65,6 +65,18 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>5.12.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.10.2</version>
+            <scope>test</scope>
         </dependency>
 
         <!-- FLYWAY -->
@@ -106,7 +118,8 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <optional>true</optional>
+            <version>1.18.30</version> <!-- or latest -->
+            <scope>provided</scope>
         </dependency>
 
 

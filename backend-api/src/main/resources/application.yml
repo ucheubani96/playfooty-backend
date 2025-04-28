@@ -34,7 +34,13 @@ spring:
     redis:
       time-to-live: 600000 # 10 minutes in milliseconds
       cache-null-values: false
-      key-prefix: playfooty::cache::
+      key-prefix: 'playfooty::cache::'
+
+jwt:
+  issuer: eCommerce
+  expiryInSeconds: 600
+  algorithm:
+    key: secretsecretkeys
 
 management:
   endpoints:
