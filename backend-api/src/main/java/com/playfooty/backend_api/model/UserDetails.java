@@ -5,15 +5,12 @@ import jakarta.persistence.*;
 import java.util.UUID;
 import com.playfooty.backendCore.model.Auditable;
 import com.playfooty.userManagement.model.UserProfile;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Getter
+@Data
 @Entity
 @Table(name = "user_details")
 public class UserDetails extends Auditable {
