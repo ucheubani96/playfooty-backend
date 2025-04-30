@@ -25,8 +25,12 @@ public class UserDetailsService {
         return userDetailsRepo.saveAndFlush(userDetails);
     }
 
-    public Optional<UserDetails> findById (UUID id) throws RuntimeException {
+    public Optional<UserDetails> findById (UUID id) {
         return userDetailsRepo.findById(id);
+    }
+
+    public Optional<UserDetails> findByEmail (String email) {
+        return userDetailsRepo.findByEmail(email);
     }
 
     public Boolean verifyUsernameUniqueness (String username) {
