@@ -11,6 +11,7 @@ import com.playfooty.backend_api.security.JWTService;
 import com.playfooty.userManagement.model.UserProfile;
 import com.playfooty.userManagement.service.UserService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.stereotype.Service;
 
@@ -18,45 +19,66 @@ import java.util.HashMap;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class AuthService extends BaseService {
 
     private final UserService userService;
-
     private final UserDetailsService userDetailsService;
-
     private final PasswordHasher passwordHasher;
-
     private final JWTService jwtService;
 
-    public void register (AddUserRequestDto request) throws RuntimeException {
+    public void register(AddUserRequestDto request) {
+        log.info("Starting registration for username='{}', email='{}'", request.getUsername(), request.getEmail());
 
-        if (userDetailsService.verifyUsernameUniqueness(request.getUsername())) throw new BadRequestException("Username already exist");
+        if (userDetailsService.verifyUsernameUniqueness(request.getUsername())) {
+            log.warn("Username already exists: {}", request.getUsername());
+            throw new BadRequestException("Username already exist");
+        }
 
-        if (userDetailsService.verifyEmailUniqueness(request.getEmail())) throw new BadRequestException("Email already exist");
+        if (userDetailsService.verifyEmailUniqueness(request.getEmail())) {
+            log.warn("Email already exists: {}", request.getEmail());
+            throw new BadRequestException("Email already exist");
+        }
 
-        request.setPassword(passwordHasher.hashPassword(request.getPassword()));
+        String rawPwd = request.getPassword();
+        String hashed = passwordHasher.hashPassword(rawPwd);
+        request.setPassword(hashed);
+        log.debug("Password hashed for username='{}'", request.getUsername());
 
         UserDetails userDetails = userDetailsService.addUserDetails(request);
+        log.info("Created UserDetails id='{}' for username='{}'", userDetails.getId(), request.getUsername());
 
-        UserProfile user = userService.addUser(request, userDetails.getId());
+        UserProfile profile = userService.addUser(request, userDetails.getId());
+        log.info("Created UserProfile id='{}' for UserDetails id='{}'", profile.getId(), userDetails.getId());
 
-//        Send welcome email
+        log.info("Registration completed for username='{}'", request.getUsername());
     }
 
-    public LoginResponseDTO login (LoginRequestDTO request) throws RuntimeException {
+    public LoginResponseDTO login(LoginRequestDTO request) {
+        log.info("Attempting login for email='{}'", request.getEmail());
+
         UserDetails userDetails = userDetailsService.findByEmail(request.getEmail())
-                .orElseThrow(() -> new BadCredentialsException("Invalid credentials"));
+                .orElseThrow(() -> {
+                    log.warn("Login failed: email not found '{}'", request.getEmail());
+                    return new BadCredentialsException("Invalid credentials");
+                });
 
-        if (!passwordHasher.matches(request.getPassword(), userDetails.getPassword())) throw new BadCredentialsException("Invalid credentials");
-        if (!userDetails.getIsActive()) throw new UnauthorizedException("Account inactive");
+        if (!passwordHasher.matches(request.getPassword(), userDetails.getPassword())) {
+            log.warn("Login failed: bad password for email='{}'", request.getEmail());
+            throw new BadCredentialsException("Invalid credentials");
+        }
 
-        HashMap<String, String> claims = new HashMap<String, String>();
+        if (!userDetails.getIsActive()) {
+            log.warn("Login failed: account inactive for userId='{}'", userDetails.getId());
+            throw new UnauthorizedException("Account inactive");
+        }
+
+        // Build claims and generate token
+        HashMap<String, String> claims = new HashMap<>();
         claims.put("id", userDetails.getId().toString());
-
-
         String token = jwtService.generate(claims);
+        log.info("Login successful for userId='{}', issuing token", userDetails.getId());
 
         return new LoginResponseDTO(token);
     }
-
 }
